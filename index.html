@@ -92,6 +92,72 @@
         <p>Team voted unanimously to use a custom-built timer library instead of an open-source one due to flexibility concerns.</p>
       </details>
     </section>
+
+    <section>
+        <h2>Stardew Valley Fan Survey</h2>
+        <form action="/submit-stardew" method="post">
+          <fieldset>
+            <legend>Your Farm Details</legend>
+      
+            <label for="farm-name">Farm Name:</label><br>
+            <input type="text" id="farm-name" name="farm-name" required><br><br>
+      
+            <label for="farm-type">Farm Type:</label><br>
+            <select id="farm-type" name="farm-type">
+              <option value="standard">Standard</option>
+              <option value="riverland">Riverland</option>
+              <option value="forest">Forest</option>
+              <option value="hill-top">Hill-top</option>
+              <option value="wilderness">Wilderness</option>
+              <option value="four-corners">Four Corners</option>
+              <option value="beach">Beach</option>
+            </select><br><br>
+      
+            <label for="start-date">When did you start playing Stardew Valley?</label><br>
+            <input type="date" id="start-date" name="start-date"><br><br>
+      
+            <label for="favorite-npc">Favorite NPC:</label><br>
+            <input list="npcs" name="favorite-npc" id="favorite-npc">
+            <datalist id="npcs">
+              <option value="Abigail">
+              <option value="Sebastian">
+              <option value="Leah">
+              <option value="Shane">
+              <option value="Penny">
+              <option value="Elliott">
+              <option value="Maru">
+              <option value="Sam">
+              <option value="Haley">
+            </datalist><br><br>
+          </fieldset>
+      
+          <fieldset>
+            <legend>Farming Habits</legend>
+      
+            <p>Which crops do you enjoy growing the most? (select all that apply)</p>
+            <input type="checkbox" id="blueberries" name="crops" value="blueberries">
+            <label for="blueberries">Blueberries</label><br>
+            <input type="checkbox" id="strawberries" name="crops" value="strawberries">
+            <label for="strawberries">Strawberries</label><br>
+            <input type="checkbox" id="corn" name="crops" value="corn">
+            <label for="corn">Corn</label><br><br>
+      
+            <p>Do you use sprinklers on your farm?</p>
+            <input type="radio" id="sprinklers-yes" name="sprinklers" value="yes">
+            <label for="sprinklers-yes">Yes</label><br>
+            <input type="radio" id="sprinklers-no" name="sprinklers" value="no">
+            <label for="sprinklers-no">No</label><br><br>
+          </fieldset>
+      
+          <fieldset>
+            <legend>Final Thoughts</legend>
+            <label for="comments">Any comments or tips you'd like to share?</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Tell us about your favorite part of the game..."></textarea><br><br>
+          </fieldset>
+      
+          <button type="submit">Submit Survey</button>
+        </form>
+      </section>
   </main>
 
   <footer>
